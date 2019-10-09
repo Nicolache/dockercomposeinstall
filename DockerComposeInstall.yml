@@ -1,0 +1,10 @@
+---
+- hosts: newhost
+  tasks:
+  - name: Install python-pip
+    apt:
+      name: python-pip
+      state: present
+      update_cache: yes
+  - name: Install docker-compose
+    shell: pip install docker-compose --proxy http://{{ proxyip }}:{{ proxyport }}/

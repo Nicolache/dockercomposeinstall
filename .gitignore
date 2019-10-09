@@ -1,0 +1,5 @@
+*
+!.gitignore
+!ansible.cfg
+!DockerComposeInstall.yml
+!hosts.example
